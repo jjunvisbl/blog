@@ -13,7 +13,7 @@
         for (let activeLink of activeLinks) {
             activeLink.classList.remove('active');
         }
-        console.log(activeLinks)
+        console.log(activeLinks);
 
         /* [IN PROGRESS] add class 'active' to the clicked link */
         clickedElement.classList.add('active');
@@ -25,7 +25,7 @@
             activeArticle.classList.remove('active');
         }
         /* get 'href' attribute from the clicked link */
-        const articleSelector = document.getElementById("href")
+        const articleSelector = document.getElementById('href');
         const href = clickedElement.getAttribute('href');
         console.log(href);
 
@@ -35,7 +35,7 @@
 
         /* add class 'active' to the correct article */
         targetArticle.classList.add('active');
-    }
+    };
 
     const optArticleSelector = '.post',
         optTitleSelector = '.post-title',
@@ -60,12 +60,12 @@
 
             /* create HTML of the link */
             const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
-            console.log(linkHTML)
+            console.log(linkHTML);
 
             /* insert link into html variable */
             html = html + linkHTML;
-            console.log(html)
-            html
+            console.log(html);
+            html;
         }
 
         titleList.innerHTML = html;
@@ -219,6 +219,6 @@ html
 
 titleList.innerHTML = html;
 }
-
+''
 generateTitleLinks();
 }*/
